@@ -30,7 +30,7 @@ Run the python file and type the yolo_annot_file input path and the json_out_fil
 ## 4.2 Work approach 
 I used the functionalities of the os and json libiraries in python to read the text file and split each value in each line and to dump the resulted data in a json file.
 ## 4.3 Problems I faced
-One problem was I didn't have the image's width and height which it was critical to be able to convert the annotations format from yolo to COCO/json, but I found that the widths and heights in the image1.json file was multiplied by a 100 so with this information I was able to know the width and height of the whole image then I calculated x, y, width, and height values as the following formulas:
+First problem was I didn't have the image's width and height which it was critical to be able to convert the annotations format from yolo to COCO/json, but I found that the widths and heights in the image1.json file was multiplied by a 100 so with this information I was able to know the width and height of the whole image then I calculated x, y, width, and height values as the following formulas:
 
 > 1- COCO_w = image_width * yolo_width
 
